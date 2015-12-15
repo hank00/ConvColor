@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>ConvColor demo</title>
+<script src="./ConvColor.js"></script>
+
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+  var convcolor = new ConvColor( "red" );
+  document.getElementById("color1box").innerHTML =
+    "convcolor.r:" + convcolor.r
+    + "<br />convcolor.g:" + convcolor.g
+    + "<br />convcolor.b:" + convcolor.b
+    + "<br />convcolor.a:" + convcolor.a
+    + "<br />convcolor.getRgb():" + convcolor.getRgb()
+    + "<br />convcolor.getRgba():" + convcolor.getRgba()
+    + "<br />convcolor.getColor():" + convcolor.getColor()
+    + "<br />convcolor.getAColor():" + convcolor.getAColor()
+  ;
+  convcolor = new ConvColor( "#0080c0" );
+  document.getElementById("color2box").innerHTML =
+    "convcolor.r:" + convcolor.r
+    + "<br />convcolor.g:" + convcolor.g
+    + "<br />convcolor.b:" + convcolor.b
+    + "<br />convcolor.a:" + convcolor.a
+    + "<br />convcolor.getRgb():" + convcolor.getRgb()
+    + "<br />convcolor.getRgba():" + convcolor.getRgba()
+    + "<br />convcolor.getColor():" + convcolor.getColor()
+    + "<br />convcolor.getAColor():" + convcolor.getAColor()
+  ;
+  convcolor = new ConvColor( "#0080c0" , "0.5" );
+  document.getElementById("color3box").innerHTML =
+    "convcolor.r:" + convcolor.r
+    + "<br />convcolor.g:" + convcolor.g
+    + "<br />convcolor.b:" + convcolor.b
+    + "<br />convcolor.a:" + convcolor.a
+    + "<br />convcolor.getRgb():" + convcolor.getRgb()
+    + "<br />convcolor.getRgba():" + convcolor.getRgba()
+    + "<br />convcolor.getColor():" + convcolor.getColor()
+    + "<br />convcolor.getAColor():" + convcolor.getAColor()
+  ;
+  convcolor = new ConvColor( "rgb( 225 , 192 , 64 )" , "0.5" );
+  document.getElementById("color4box").innerHTML =
+    "convcolor.r:" + convcolor.r
+    + "<br />convcolor.g:" + convcolor.g
+    + "<br />convcolor.b:" + convcolor.b
+    + "<br />convcolor.a:" + convcolor.a
+    + "<br />convcolor.getRgb():" + convcolor.getRgb()
+    + "<br />convcolor.getRgba():" + convcolor.getRgba()
+    + "<br />convcolor.getColor():" + convcolor.getColor()
+    + "<br />convcolor.getAColor():" + convcolor.getAColor()
+  ;
+});
+</script>
+</head>
+
+<body>
+<h1>ex.1 argument : red</h1>
+<div id="color1box"></div>
+<h1>ex.2 argument : #0080c0</h1>
+<div id="color2box"></div>
+<h1>ex.3 arguments : #0080c0 , 0.5</h1>
+<div id="color3box"></div>
+<h1>ex.4 arguments : rgb( 225 , 192 , 64 ) , 0.5</h1>
+<div id="color4box"></div>
+</body>
+
+</html>
