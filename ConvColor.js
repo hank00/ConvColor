@@ -170,7 +170,7 @@ ConvColor = function( arg , alpha ){
     this.setRgb( arg );
   }else{
     // error
-    return null;
+    return false;
   }
 
   // opacityの計算
@@ -240,7 +240,7 @@ ConvColor.prototype.setRgb = function( arg ){
   // 入力値チェック
   if( ary[0] != parseInt( ary[0] , 10 ) || ary[1] != parseInt( ary[1] , 10 ) || ary[2] != parseInt( ary[2] , 10 ) ){
     // error
-    return null;
+    return false;
   }
   this.r = ary[0];
   this.g = ary[1];
